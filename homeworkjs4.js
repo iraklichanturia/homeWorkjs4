@@ -18,7 +18,7 @@ for(let num=1;num<=20;num++){
 //შექმენით ალგორითმი რომელიც დაითვლის თუ რამდენი 4 ის ჯეrადი რიცხვია
 //მოთავსებული 0 დან 120 მდე
 
-let count = 0;
+var count = 0;
 for(let num = 1; num <= 120; num++){
     if(num % 4 == 0){
         console.log(num);
@@ -38,7 +38,7 @@ while(isNaN(number)){
     number = Number(prompt("Enter a correct number"));
 }
 
-let count = 0;
+var count = 0;
 for(let i = 1; i <= number; i++){
     if(number % i == 0){
         console.log(i)
