@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //შექმენით ალგორითმი რომელიც დაითვლის თუ რამდენი 4 ის ჯეrადი რიცხვია
+      //მოთავსებული 0 დან 120 მდე
+
+      var count = 0;
+      for (let num = 1; num <= 120; num++) {
+        if (num % 4 == 0) {
+          console.log(num);
+          count++;
+        }
+      }
+      console.log(count);
+    </script>
+  </body>
+</html>

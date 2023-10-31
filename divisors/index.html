@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //4. შექმენით ალგორითმი რომელიც დაითვლის თუ რამდენი გამყოფი აქვს
+      //მომხმარებლის მიერ შემოტანილ რიცხვს
+
+      //1. ვთხოვოთ მომხმარებელს შემოიტანოს რიცხვითი მნიშვნელობა
+      //2.შევქმნათ ლუპი რომელიც გამოიტანს კონსოლში მომხმარებლის მიერ შემოტანილი რიცხვის გამყოფებს
+
+      let number = Number(prompt("Enter a number"));
+      while (isNaN(number)) {
+        number = Number(prompt("Enter a correct number"));
+      }
+
+      var count = 0;
+      for (let i = 1; i <= number; i++) {
+        if (number % i == 0) {
+          console.log(i);
+          count++;
+        }
+      }
+      console.log(count);
+    </script>
+  </body>
+</html>
